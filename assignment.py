@@ -42,25 +42,6 @@ def append_entry(filename, text):
 
 # Exercise 4 -----------------------------------------------------------------
 
-def highest_score(filename):
-    file = open(filename, "r")
-    lines = file.readlines()
-    file.close()
-
-    best_name = ""
-    best_score = -1
-    for line in lines:
-        line = line.strip()
-        if line == "":
-            continue
-        parts = line.split(",")
-        name = parts[0]
-        score = int(parts[1])
-        if score > best_score:
-            best_score = score
-            best_name = name
-    return [best_name, best_score]
-
 
 # Exercise 5 -----------------------------------------------------------------
 
