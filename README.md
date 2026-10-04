@@ -102,33 +102,6 @@ then again in `"r"` mode to count the lines.
 
 **Problem:**
 
-Every line of the file looks like `name,score`. Find the student with the
-highest score and return a list `[name, score]`.
-
-- `name` must be a string, `score` must be an **integer** (not a string).
-- If two students have the same highest score, return the one that appears
-  **first** in the file.
-- The file always has at least one line.
-
-**Example:**
-
-    Example File Content (scores.txt):
-        Bat,78
-        Saraa,91
-        Tuguldur,65
-
-    Program Output:
-        ["Saraa", 91]
-
-*Hint:* `"Saraa,91".split(",")` gives you `["Saraa", "91"]`. Then use
-`int()` on the second part.
-
----
-
-## Exercise 5
-
-**Problem:**
-
 Return a list of the **line numbers** (starting at 1) of every line that
 contains `word` anywhere inside it.
 
@@ -160,7 +133,7 @@ whether one string is inside another with `if small in big:`.
 
 ---
 
-## Exercise 6
+## Exercise 5
 
 **Problem:**
 
@@ -192,7 +165,7 @@ Note the format: number, colon, **one space**, then the line.
 
 ---
 
-## Exercise 7 (Optional)
+## Exercise 6 (Optional)
 
 **Problem:**
 
