@@ -1,6 +1,6 @@
 # ANSWER KEY - Python File Handling Lab
 # Only uses open / read / readline / readlines / write / close
- 
+  
 # Exercise 1 -----------------------------------------------------------------
 
 def write_shopping_list(items, filename):
