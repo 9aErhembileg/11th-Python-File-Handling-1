@@ -10,7 +10,7 @@ def write_shopping_list(items, filename):
         file.write(str(number) + ". " + item + "\n")
         number = number + 1
     file.close()
-
+ 
 
 # Exercise 2 -----------------------------------------------------------------
 
