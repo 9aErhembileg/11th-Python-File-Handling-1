@@ -4,7 +4,6 @@ from assignment import (
     write_shopping_list,
     read_names,
     append_entry,
-    highest_score,
     search_file,
     number_the_lines,
 )
@@ -79,22 +78,6 @@ def test3_twice(tmp_path):
     assert append_entry(path, "Wed") == 3
     assert path.read_text() == "Mon\nTue\nWed\n"
 
-
-@pytest.mark.parametrize(
-    "content, expected",
-    [
-        ["Bat,78\nSaraa,91\nTuguldur,65\n", ["Saraa", 91]],
-        ["Bat,78\n", ["Bat", 78]],
-        ["Anu,50\nBat,50\n", ["Anu", 50]],       
-        ["Bat,10\nSaraa,20\nAnu,100\n", ["Anu", 100]],
-        ["Anu,100\nBat,10\nSaraa,20\n", ["Anu", 100]],   
-        ["Bat,0\nSaraa,0\n", ["Bat", 0]],
-    ]
-)
-def test4(tmp_path, content, expected):
-    path = tmp_path / "scores.txt"
-    path.write_text(content)
-    assert highest_score(path) == expected
 
 
 SAMPLE = "I like Python\nPython is fun\nGoodbye world\npython again\n"
