@@ -1,0 +1,23 @@
+{
+    "tests": [
+      {
+        "name": "exercise1",
+        "setup": "sudo -H pip3 install -r requirements.txt",
+        "run": "pytest test_assignment.py::test1",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 5,
+        "points": 1
+      },
+      {
+        "name": "exercise2",
+        "run": "pytest test_assignment.py::test2",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 5,
+        "points": 1
+      }
+    ]
+  }
