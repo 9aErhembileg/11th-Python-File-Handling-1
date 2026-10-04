@@ -1,10 +1,30 @@
-# You can remove 'pass' if you written code in the function 
+# You can remove 'pass' if you written code in the function
 # Exercise 1
-def grade_report(input_file, output_file):
+def write_shopping_list(items, filename):
+    # Write your code here
     pass
 
 # Exercise 2
-def calculate_balance(input_file, output_file):
+def read_names(filename):
+    # Write your code here
     pass
 
+# Exercise 3
+def append_entry(filename, text):
+    # Write your code here
+    pass
 
+# Exercise 4
+def highest_score(filename):
+    # Write your code here
+    pass
+
+# Exercise 5
+def search_file(filename, word):
+    # Write your code here
+    pass
+
+# Exercise 6
+def number_the_lines(source, destination):
+    # Write your code here
+    pass
