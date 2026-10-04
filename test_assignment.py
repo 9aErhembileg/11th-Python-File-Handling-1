@@ -94,13 +94,13 @@ SAMPLE = "I like Python\nPython is fun\nGoodbye world\npython again\n"
         ["o", [1, 2, 3, 4]],
     ]
 )
-def test5(tmp_path, word, expected):
+def test4(tmp_path, word, expected):
     path = tmp_path / "text.txt"
     path.write_text(SAMPLE)
     assert search_file(path, word) == expected
 
 
-def test5_empty_file(tmp_path):
+def test4_empty_file(tmp_path):
     path = tmp_path / "text.txt"
     path.write_text("")
     assert search_file(path, "anything") == []
@@ -113,7 +113,7 @@ def test5_empty_file(tmp_path):
         ["", "", 0],
     ]
 )
-def test6(tmp_path, content, expected, expected_count):
+def test5(tmp_path, content, expected, expected_count):
     source = tmp_path / "in.txt"
     destination = tmp_path / "out.txt"
     source.write_text(content)
@@ -122,7 +122,7 @@ def test6(tmp_path, content, expected, expected_count):
     assert result == expected_count
 
 
-def test6_does_not_change_source(tmp_path):
+def test5_does_not_change_source(tmp_path):
     source = tmp_path / "in.txt"
     destination = tmp_path / "out.txt"
     source.write_text("apple\nbanana\n")
